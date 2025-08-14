@@ -16,3 +16,7 @@ It depends on whether you’re talking about **decimal (GB)** or **binary (GiB)*
  
  - RAM is a block of data where values are stored and each having a distinct address
 ![alt text](image-1.png)
+---
+## 1. Arrays
+![alt text](image.png)
+---
