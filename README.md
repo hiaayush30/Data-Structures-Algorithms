@@ -18,5 +18,7 @@ It depends on whether you’re talking about **decimal (GB)** or **binary (GiB)*
 ![alt text](image-1.png)
 ---
 ## 1. Arrays
+### static arrays
+- In Python and JS, arrays are dynamic by default
 ![alt text](image.png)
 ---

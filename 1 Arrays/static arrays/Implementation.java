@@ -1,4 +1,4 @@
-public class StaticArray {
+public class Implementation {
 
     // Insert n into arr at the next open position.
     // Length is the number of 'real' values in arr, and capacity
