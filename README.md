@@ -21,4 +21,9 @@ It depends on whether you’re talking about **decimal (GB)** or **binary (GiB)*
 ### static arrays
 - In Python and JS, arrays are dynamic by default
 ![alt text](image.png)
+### dynamic arrays
+![alt text](image-2.png)
+- double the capacity when we run out of space O(n)
+- this is called amortized time complexity ie it took O(n) when we ran out of space but it is less frequent and most of the times it is O(1) so we will call this "O(1) amortized time complexity" (pushing a value to a dynamic array)
+- all the complexties are same as that of static arrays(see figure abv)
 ---
