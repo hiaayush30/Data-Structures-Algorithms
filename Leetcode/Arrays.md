@@ -1,4 +1,7 @@
 ## Contains Duplicate
+```
+Dictionary lookups and insertions take, on average, constant time, O(1).
+```
 - optimized
 ```python
 class Solution(object):
@@ -51,6 +54,7 @@ print(isAnagram("cta","cat"))
 ```
 
 ## 2 Sum
+- brute force
 ```python
 # O(n^2) time
 # O(1) space
@@ -60,10 +64,14 @@ print(isAnagram("cta","cat"))
                 if nums[i]+nums[j] == target:
                     return [i,j]
 ```
-
+- optimized
 ```python
-# O(n) time complexity
-# O(n) space complexity
+>> O(n) time complexity
+>> It only requires a single pass through the list.
+>> O(n) space complexity
+>> In the worst-case scenario, the dictionary might store all n elements if no pair sums to the target.
+```
+```python
 def twoSum(self, nums, target):
         seen = {}
          # will have numbers and their indexes
