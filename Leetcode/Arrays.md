@@ -90,10 +90,10 @@ def twoSum(self, nums, target):
         res = ""
 
         for i in range(len(strs[0])):
-            for s in strs:
-               if i == len(s) or s[i] != strs[0][i]:
+            for s in strs: # checcking if 1st letter same in each word
+               if i == len(s) or s[i] != strs[0][i]: 
                     return res
-            res += strs[0][i]
+            res += strs[0][i]  # if yes then add the letter to res
 
         return res
 ```
