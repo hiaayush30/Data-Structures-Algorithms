@@ -1,17 +1,29 @@
-def isAnagram(s, t):
-        if not len(s) == len(t):
-            return False
+arr=["cat","cab","can"]
+
+def LongestCommonPrefix(arr):
+    prefix = ""
+    
+    for i in range(len(arr[0])):
+        for word in arr:
+            if arr[0][i] != word[i] or i == len(word):
+                return prefix
+        prefix += arr[0][i] 
+
+
+print(LongestCommonPrefix(arr))
+
+def majorityElement(nums):
         
-        mapping =  {}
-        for char in s:
-            mapping[char] = mapping.get(char, 0) + 1
-        for char in t:  
-            if mapping[char] == 0:
-                return False
-            else:
-                mapping[char] -= 1
+        mydict={}
+        
+        for num in nums:
+            mydict[num] = mydict.get(num,0)+1
+        
+        max = 0
+        for val in list(mydict):
+        #     if mydict[key] > max:
+        #         max = key
+        # return max
+           print(val)
 
-        return True
-
-
-print(isAnagram("cta","cat"))
+print(majorityElement([1,1,2,3,3,3,3,3]))

@@ -42,7 +42,7 @@ def isAnagram(s, t):
         for char in s:
             mapping[char] = mapping.get(char, 0) + 1
         for char in t:  
-            if mapping[char] == 0:
+            if mapping.get(char,0) == 0:
                 return False
             else:
                 mapping[char] -= 1
@@ -86,14 +86,15 @@ def twoSum(self, nums, target):
 ## Longest COmmon Prefix
 - O (m*n) time complexity
 ```python
-    def longestCommonPrefix(self, strs):
-        res = ""
+def LongestCommonPrefix(arr):
+    prefix = ""
+    
+    for i in range(len(arr[0])):
+        for word in arr:
+            if arr[0][i] != word[i] or i == len(word):
+                return prefix
+        prefix += arr[0][i] 
 
-        for i in range(len(strs[0])):
-            for s in strs: # checcking if 1st letter same in each word
-               if i == len(s) or s[i] != strs[0][i]: 
-                    return res
-            res += strs[0][i]  # if yes then add the letter to res
 
-        return res
+print(LongestCommonPrefix(arr))
 ```
